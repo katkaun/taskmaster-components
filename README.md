@@ -9,5 +9,4 @@
 
    npm install
 
-2. Öppna i storybook:
-    npm run storybook
+   npm run storybook
