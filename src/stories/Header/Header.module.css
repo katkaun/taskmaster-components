@@ -1,0 +1,10 @@
+.headerContainer {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px;            /* Adds some padding */
+    text-align: center;       /* Centers the text */
+    font-size: 24px;          /* Font size */
+    font-weight: bold;        /* Makes the text bold */
+    color: #333;              /* Text color */
+    border-bottom: 2px solid #e9ecef; /* Adds a border at the bottom */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
