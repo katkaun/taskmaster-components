@@ -1,0 +1,12 @@
+.footerContainer {
+    background-color:  #f8f9fa;  /* Dark background */
+    padding: 20px;             /* Adds some padding */
+    text-align: center;        /* Centers the text */
+    font-size: 24px;           /* Font size */
+    color: #333;               /* White text color */
+    border-top: 2px solid #e9ecef; /* Adds a border at the top */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: absolute;        /* Keeps footer at the bottom */
+    bottom: 0;
+    width: 100%;
+}
