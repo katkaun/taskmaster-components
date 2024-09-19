@@ -1,12 +1,10 @@
-import React from 'react';
-import Chat from './Chat';
+import Chat from './Chat'
 
 export default {
-  title: 'Chat',
-  component: Chat,
+    title: 'taskmaster/components/Chat',
+    component: Chat,
 };
 
-const Template = (args) => <Chat {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {};
+export const Default = {
+    
+}
