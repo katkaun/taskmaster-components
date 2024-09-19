@@ -1,7 +1,7 @@
 import UserIcon from "./UserIcon";
 
 export default {
-  title: "taskmaster/components/Icons/UserIcon",
+  title: "taskmaster/components/UserIcon",
   component: UserIcon,
 };
 
