@@ -1,9 +1,10 @@
-import React from "react";
 import Home from './Home';
 
 export default {
-    title: 'Home',
+    title: 'taskmaster/components/Home',
     component: Home,
 };
 
-export const Default = () => <Home />;
+export const Default = {
+
+}

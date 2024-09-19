@@ -1,12 +1,13 @@
 .container {
     padding: 20px;
-    text-align: center;
 }
 
 h1 {
-    color: blue;
+    color: green;
+    text-align: center;
 }
 
 p {
-    color: grey;
+    color: black;
+    text-align: center;
 }
