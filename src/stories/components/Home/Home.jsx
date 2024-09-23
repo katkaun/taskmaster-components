@@ -1,16 +1,25 @@
 import React from 'react';
-import './Home.module.css';
+import styles from './Home.module.css';
 
-function Home() {
-    return (
-        <div className='container'>
-            <h1>Välkommen till TaskMasterAI!</h1>
-            <p>
-            Börja ditt äventyr mot ett mer ordnat liv med TaskMasterAI
-             – så slipper du känna dig som en virrig ekorre som tappat bort sina nötter!
-            </p>
-        </div>
-    );
+
+const Home = () => {
+  return (
+    <div className={styles.container}>
+      <div className={styles.sidebar}>
+        <h1>Taskmaster AI</h1>
+        <p>Taskmaster AI your personal organizer</p>
+        
+      </div>
+      <div className={styles.main}>
+        <h2>Welcome to Taskmaster AI</h2>
+        <p>Try out our chat</p>
+        <button className={styles.signinButton}>Sign in</button>
+        <p>
+          First time? Please <a href="#">register new account</a>
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default Home;
