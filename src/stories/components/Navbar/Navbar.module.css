@@ -1,12 +1,42 @@
 .navbar {
-    position: fixed; 
-    top: 0;
-    width: 100%; 
-    background-color: #A1E6D8;
-    color: rgb(16, 15, 15); 
-    text-align: center; 
-    padding: 15px; 
-    font-size: 20px; 
-  
-    
-  }
+  background-color: #f6f2ed; /* Exempel på en allmän bakgrundsfärg */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbarLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbarLogo h1 {
+  font-family: "Arial", sans-serif;
+  color: #111;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.navbarLinks {
+  display: flex;
+  gap: 15px;
+}
+
+.navbarLinks a {
+  text-decoration: none;
+  color: #111;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.navbarLinks a:hover {
+  color: #8e44ad; /* Hover-effekt */
+}
+
+.logoImage {
+  height: 50px; /* Justera logotypens storlek */
+  margin-right: 10px;
+}

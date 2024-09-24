@@ -1,8 +1,8 @@
-import CalenderIcon from "./CalenderIcon";
+import CalendarIcon from "./CalendarIcon";
 
 export default {
   title: "taskmaster/components/CalenderIcon",
-  component: CalenderIcon,
+  component: CalendarIcon,
 };
 
 export const Default = {

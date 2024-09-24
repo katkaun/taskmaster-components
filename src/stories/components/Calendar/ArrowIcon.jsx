@@ -3,60 +3,24 @@ import React from "react";
 const ArrowIcon = () => {
   return (
     <svg
-      width="78"
-      height="78"
-      viewBox="0 0 78 78"
+      width="33"
+      height="33"
+      viewBox="0 0 33 33"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g filter="url(#filter0_d_328_5)">
-        <rect
-          x="58"
-          y="54"
-          width="38"
-          height="38"
-          rx="19"
-          transform="rotate(180 58 54)"
-          fill="#FFFCFC"
-        />
-      </g>
-      <defs>
-        <filter
-          id="filter0_d_328_5"
-          x="0"
-          y="0"
-          width="78"
-          height="78"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset dy="4" />
-          <feGaussianBlur stdDeviation="10" />
-          <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_328_5"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_328_5"
-            result="shape"
-          />
-        </filter>
-      </defs>
+      <path
+        d="M33 16.5C33 25.6127 25.6127 33 16.5 33C7.3873 33 0 25.6127 0 16.5C0 7.3873 7.3873 0 16.5 0C25.6127 0 33 7.3873 33 16.5Z"
+        fill="white"
+      />
+      <path d="M13 22.688L20.5093 17.344L13 12" fill="white" />
+      <path
+        d="M13 22.688L20.5093 17.344L13 12"
+        stroke="black"
+        stroke-width="2.97438"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
   );
 };

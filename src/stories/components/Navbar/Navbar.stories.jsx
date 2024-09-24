@@ -1,3 +1,6 @@
+import CalendarIcon from "../CalendarIcon/CalendarIcon";
+import UserIcon from "../UserIcon/UserIcon";
+import ReminderIcon from "../ReminderIcon/ReminderIcon";
 import Navbar from "./Navbar";
 
 export default {
@@ -5,6 +8,6 @@ export default {
   component: Navbar,
 };
 
-export const Default = {
-    
-};
+export const Default = () => (
+  <Navbar icons={[ReminderIcon, CalendarIcon, UserIcon]} />
+); 
