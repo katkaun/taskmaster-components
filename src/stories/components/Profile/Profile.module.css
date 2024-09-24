@@ -50,11 +50,9 @@
   margin: 5px 0;
 }
 
-/* Uppdaterad för att använda Storybook Button-komponent */
 .buttonWrapper {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-/* Ta bort de gamla stilarna för editButton eftersom vi nu använder knappen från Storybook */
