@@ -1,45 +1,72 @@
 .chatContainer {
-    width: 400px;
-    height: 600px;
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  
-  .header {
-    background-color: #A1E6D8;
-    height: 50px;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-  }
-  
- 
-  
-  .chatContent {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 16px;
-  }
-  
-  .chatInput {
-    padding: 10px;
-    background-color: #A1E6D8;
-  }
-  
-  .chatInput input {
-    width: 94%;
-    padding: 10px;
-    background-color: white;
-    border: none;
-    color: black;
-    border-radius: 5px;
-    outline: none;
-    margin: 0 auto;
-  }
-  
+  width: 400px;
+  height: 600px;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header {
+  background-color: #A1E6D8;
+  height: 50px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.welcome {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.chatContent {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-size: 16px;
+}
+
+.chatInput {
+  display: flex; 
+  padding: 10px;
+  background-color: #A1E6D8;
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+.chatInput input {
+  width: 70%;
+  height: 40px; 
+  padding: 0 10px; 
+  background-color: white;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 10px; 
+}
+
+.buttonContainer {
+  width: 30%; 
+}
+
+.buttonContainer button {
+  background-color: #D6C8F1; 
+  color: #333; 
+  width: 100%; 
+  height: 40px; 
+  font-size: 16px;
+  border-radius: 5px;
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.buttonContainer button:hover {
+  background-color: #b39ddb; 
+  transform: scale(1.05); 
+}
