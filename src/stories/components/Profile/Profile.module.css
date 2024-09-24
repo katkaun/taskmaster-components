@@ -1,51 +1,60 @@
 .profileContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5; 
-  }
-  
-  .profileBody {
-    background-color: white;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-  }
-  
-  .profilePicture {
-    width: 150px;
-    height: 150px;
-    background-color: #e0e0e0; 
-    border-radius: 50%;
-    margin: 0 auto 20px auto; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .profileName {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  .profileText {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 20px;
-  }
-  
-  .contactInfo {
-    font-size: 16px;
-    color: #333;
-    text-align: left;
-    padding-left: 10px;
-  }
-  
-  .contactInfo p {
-    margin: 5px 0;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5; 
+}
+
+.profileBody {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.profilePicture {
+  width: 150px;
+  height: 150px;
+  background-color: #e0e0e0; 
+  border-radius: 50%;
+  margin: 0 auto 20px auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileName {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.profileText {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.contactInfo {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.contactInfo p {
+  margin: 5px 0;
+}
+
+/* Uppdaterad för att använda Storybook Button-komponent */
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Ta bort de gamla stilarna för editButton eftersom vi nu använder knappen från Storybook */
