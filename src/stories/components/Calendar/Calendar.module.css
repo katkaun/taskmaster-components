@@ -24,7 +24,7 @@
     color: #000;
 }
 
-.nextButton{
+.nextButton, .prevButton{
     background: none; 
     border: none;
     padding: 10px;
@@ -35,9 +35,7 @@
     color: inherit;  
 }
 
- .nextButton:hover {
-    background-color: rgba(6, 53, 67, 0.178); /* En transparent bakgrundsfärg på hover, justera vid behov */
-}
+
 
 .weekdays {
     display: grid;
