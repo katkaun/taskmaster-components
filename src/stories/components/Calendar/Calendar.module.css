@@ -24,19 +24,19 @@
     color: #000;
 }
 
-.header button {
-    background-color: rgba(0, 0, 0, 0.43); 
-    color: #fff;
+.nextButton{
+    background: none; 
     border: none;
-    padding: 8px 12px;
-    font-size: 10px;
+    padding: 10px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: inherit;  
 }
 
-.header button:hover {
-    background-color: #232623;
+ .nextButton:hover {
+    background-color: rgba(6, 53, 67, 0.178); /* En transparent bakgrundsfärg på hover, justera vid behov */
 }
 
 .weekdays {
@@ -68,10 +68,20 @@
    
     color: #000000;
    
-   
+    position: relative;
+    cursor: pointer;
     
 }
-
+.Dot {
+    position: absolute;
+    bottom: 5px; /* Justera så att den passar under datumet */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px; /* Justera storlek */
+    height: 8px; /* Justera storlek */
+    background-color: red; /* Röd färg */
+    border-radius: 50%; /* Gör den rund */
+}
 
 .currentDate {
     background-color: #093963;
