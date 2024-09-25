@@ -10,4 +10,6 @@ export default {
 
 export const Default = () => (
   <Navbar icons={[ReminderIcon, CalendarIcon, UserIcon]} />
-); 
+);
+
+export const WithoutSubComponents = () => <Navbar />;
