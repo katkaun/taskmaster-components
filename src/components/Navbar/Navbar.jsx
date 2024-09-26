@@ -1,18 +1,25 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 
-const Navbar = ({ icons, links, title, logo }) => {
+const Navbar = ({ icons = [], logo }) => {
   return (
     <div className={styles.navbar}>
-      <div className={styles.navbarLogo}>
-        <h1>Plats för Logo</h1>
-      </div>
+      <div className={styles.navbarLogo}>{logo || null}</div>
       <div className={styles.navbarLinks}>
-        {icons.map((Icon, index) => (
-          <a key={index} href="#">
-            <Icon /> {/* Renderar varje ikonkomponent */}
-          </a>
-        ))}
+        {Array.isArray(icons) && icons.length > 0 ? (
+          icons.map(
+            (
+              Icon,
+              index // Icon här refererar till varje komponent
+            ) => (
+              <a key={index} href="#">
+                <Icon /> {/* Renderar den aktuella ikonen */}
+              </a>
+            )
+          )
+        ) : (
+          <p>Icons not available</p>
+        )}
       </div>
     </div>
   );

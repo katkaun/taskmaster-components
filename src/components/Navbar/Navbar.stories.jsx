@@ -2,6 +2,7 @@ import CalendarIcon from "../CalendarIcon/CalendarIcon";
 import UserIcon from "../UserIcon/UserIcon";
 import ReminderIcon from "../ReminderIcon/ReminderIcon";
 import Navbar from "./Navbar";
+import Logo from "../Logo/Logo";
 
 export default {
   title: "taskmaster/components/Navbar",
@@ -9,7 +10,11 @@ export default {
 };
 
 export const Default = () => (
-  <Navbar icons={[ReminderIcon, CalendarIcon, UserIcon]} />
+  <Navbar icons={[ReminderIcon, CalendarIcon, UserIcon]} logo={<Logo />} />
+);
+
+export const WithoutLogo = () => (
+  <Navbar icons={[ReminderIcon, CalendarIcon, UserIcon]} logo={null} />
 );
 
 export const WithoutSubComponents = () => <Navbar />;
