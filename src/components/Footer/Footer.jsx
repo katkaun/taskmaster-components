@@ -8,7 +8,7 @@ function Footer() {
         <div className={styles.footerCol}>
           <ul className={styles.links}>
             <li>
-              <img src="/armin.jpg" alt="Armin's face" width="250" height="250" />
+              <img src="/armin.jpg" alt="TaskMasterAI Logo" width="250" height="250" />
             </li>
           </ul>
         </div>
