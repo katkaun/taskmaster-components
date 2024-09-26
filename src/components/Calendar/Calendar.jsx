@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from "./Calendar.module.css";
 import ArrowIcon from './ArrowIcon';
+import ArrowIconLeft from './ArrowIconLeft';
 
 const Calendar = () => {
     const [currentDate, setCurrentDate] = useState(new Date());
@@ -66,22 +67,22 @@ const Calendar = () => {
         <div className={styles.calendar}>
             <div className={styles.header}>
                 <button className={styles.prevButton} onClick={prevMonth}>
-                    
+                    <ArrowIconLeft/>
                 </button>
                 <h2>{currentDate.toLocaleString("default", { month: "long", year: "numeric" })}</h2>
                 <button className={styles.nextButton} onClick={nextMonth}>
-                    <ArrowIcon direction="right" />
+                    <ArrowIcon />
                 </button>
             </div>
 
-            {/* Veckodagar */}
+            {/* det här är Veckodagar */}
             <div className={styles.weekdays}>
                 {daysOfWeek.map((day) => (
                     <div key={day} className={styles.weekday}>{day}</div>
                 ))}
             </div>
 
-            {/* Dagar */}
+            {/* det här är Datum */}
             <div className={styles.dates}>
                 {days.map((day, index) => {
                     const selectedDate = formatDate(currentDate.getFullYear(), currentDate.getMonth(), day);
