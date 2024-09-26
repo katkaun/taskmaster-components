@@ -1,10 +1,8 @@
 import CalendarIcon from "./CalendarIcon";
 
 export default {
-  title: "taskmaster/components/CalenderIcon",
+  title: "taskmaster/components/CalendarIcon",
   component: CalendarIcon,
 };
 
-export const Default = {
-
-};
+export const Default = () => <CalendarIcon />;

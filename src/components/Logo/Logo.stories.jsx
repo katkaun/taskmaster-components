@@ -1,10 +1,10 @@
-import Logo from './Logo';
+import Logo from "./Logo";
 
 export default {
-    title: "taskmaster/components/Logo",
-    component: Logo,
-  };
+  title: "taskmaster/components/Logo",
+  component: Logo,
+};
+
+export const Default = {
   
-  export const Default = {
-      
-  };
+};

@@ -10,9 +10,11 @@ export default {
 };
 
 export const Default = () => (
-  <Navbar icons={[ReminderIcon, CalendarIcon, UserIcon]} logo={<Logo/>} />
+  <Navbar icons={[ReminderIcon, CalendarIcon, UserIcon]} logo={<Logo />} />
+);
+
+export const WithoutLogo = () => (
+  <Navbar icons={[ReminderIcon, CalendarIcon, UserIcon]} logo={null} />
 );
 
 export const WithoutSubComponents = () => <Navbar />;
-
-// export const MissingTitleAndLogo = () => <Navbar icons={[ReminderIcon, CalendarIcon, UserIcon]} />;
