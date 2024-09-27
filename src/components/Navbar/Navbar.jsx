@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 
-const Navbar = ({ icons = [], logo }) => {
+const Navbar = ({ className, icons = [], logo }) => {
   return (
-    <div className={styles.navbar}>
+    <div className={`${styles.navbar} ${className}`}>
       <div className={styles.navbarLogo}>{logo || null}</div>
       <div className={styles.navbarLinks}>
         {Array.isArray(icons) && icons.length > 0 ? (
