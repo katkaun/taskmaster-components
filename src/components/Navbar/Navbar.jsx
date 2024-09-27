@@ -12,9 +12,9 @@ const Navbar = ({ className, icons = [], logo }) => {
               Icon,
               index // Icon här refererar till varje komponent
             ) => (
-              <a key={index} href="#">
+              <div key={index} href="#">
                 <Icon /> {/* Renderar den aktuella ikonen */}
-              </a>
+              </div>
             )
           )
         ) : (
