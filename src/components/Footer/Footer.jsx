@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import Image from '../Image/Image';
+import Logo from '../Logo/Logo';  // Import Logo component
 
 function Footer() {
   return (
@@ -8,7 +10,8 @@ function Footer() {
         <div className={styles.footerCol}>
           <ul className={styles.links}>
             <li>
-              <img src="/armin.jpg" alt="TaskMasterAI Logo" width="250" height="250" />
+              {/* Replace img tag with Logo component */}
+              <Logo />
             </li>
           </ul>
         </div>
@@ -32,10 +35,10 @@ function Footer() {
             Börja ditt äventyr mot ett mer ordnat liv med TaskMaster AI
           </p>
           <div className={styles.icons}>
-            <img src="/facebook.png" alt="Facebook" width="50" height="50" />
-            <img src="/youtube.png" alt="YouTube" width="50" height="50" />
-            <img src="/x.png" alt="X" width="50" height="50" />
-            <img src="/instagram.png" alt="Instagram" width="50" height="50" />
+            <Image imageName="facebook" alt="Facebook" />
+            <Image imageName="youtube" alt="YouTube" />
+            <Image imageName="x" alt="X (formerly Twitter)" />
+            <Image imageName="instagram" alt="Instagram" />
           </div>
         </div>
       </div>
