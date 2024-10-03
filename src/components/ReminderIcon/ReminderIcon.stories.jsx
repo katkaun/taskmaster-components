@@ -5,6 +5,4 @@ export default {
     component: ReminderIcon,
 };
 
-export const Default = {
-    
-};
+export const Default = () => <ReminderIcon />;

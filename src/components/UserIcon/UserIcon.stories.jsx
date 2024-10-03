@@ -5,6 +5,4 @@ export default {
   component: UserIcon,
 };
 
-export const Default = {
-    
-};
+export const Default = () => <UserIcon />;
