@@ -1,14 +1,14 @@
 import React from 'react';
-import './Logout.module.css';
+import styles from './Logout.module.css';
 
 function Logout() {
     const logginOut = () => {
-        alert ("You have log out!")
-        
-    }
-    return (
-        <button onClick={logginOut}>Logout</button>
-    )
-};
+        alert("You have logged out!");
+    };
 
-export default Logout
+    return (
+        <button onClick={logginOut} className={styles.button}>Logout</button>
+    );
+}
+
+export default Logout;
