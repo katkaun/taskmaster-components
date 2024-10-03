@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import styles from "./ProfileSettings.module.css";
-import Button from "../Button/Button"; 
+import Button from "../Button/Button";
 
 const ProfileSettings = () => {
   const [userInfo, setUserInfo] = useState({
     username: "Grupp2",
-    email: "@example.se",
+    email: "example@example.com",
     phone: "123-456-789",
     password: "****",
   });
@@ -19,15 +19,15 @@ const ProfileSettings = () => {
   };
 
   const handleSave = () => {
-    // Inget api än
+    console.log('Sparade uppgifter:', userInfo);
   };
 
   return (
     <div className={styles.profileSettingsContainer}>
       <h2 className={styles.title}>Profile Settings</h2>
-      <form className={styles.form}>
+      <div className={styles.form}>
         <div className={styles.formGroup}>
-          <label htmlFor="username">Användarnamn</label>
+          <label>Användarnamn</label>
           <input
             type="text"
             name="username"
@@ -36,7 +36,7 @@ const ProfileSettings = () => {
           />
         </div>
         <div className={styles.formGroup}>
-          <label htmlFor="email">Epost</label>
+          <label>Epost</label>
           <input
             type="email"
             name="email"
@@ -45,7 +45,7 @@ const ProfileSettings = () => {
           />
         </div>
         <div className={styles.formGroup}>
-          <label htmlFor="phone">Telefonnummer</label>
+          <label>Telefonnummer</label>
           <input
             type="text"
             name="phone"
@@ -54,7 +54,7 @@ const ProfileSettings = () => {
           />
         </div>
         <div className={styles.formGroup}>
-          <label htmlFor="password">Lösenord</label>
+          <label>Lösenord</label>
           <input
             type="password"
             name="password"
@@ -63,11 +63,14 @@ const ProfileSettings = () => {
           />
         </div>
 
-        
-        <div style={{ pointerEvents: "none" }}>
-          <Button title="Spara ändringar" className={styles.registerButton} />
+        <div className={styles.buttonWrapper}>
+          <Button
+            title="Spara ändringar"
+            className={styles.saveButton}
+            onClick={handleSave}
+          />
         </div>
-      </form>
+      </div>
     </div>
   );
 };
