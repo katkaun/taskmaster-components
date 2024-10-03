@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import Image from '../Image/Image';
-import Logo from '../Logo/Logo';  // Import Logo component
+import Logo from '../Logo/Logo';
 
 function Footer() {
   return (
@@ -9,10 +9,7 @@ function Footer() {
       <div className={styles.footerRow}>
         <div className={styles.footerCol}>
           <ul className={styles.links}>
-            <li>
-              {/* Replace img tag with Logo component */}
-              <Logo />
-            </li>
+            <li><Logo /></li>
           </ul>
         </div>
         <div className={styles.footerCol}>
