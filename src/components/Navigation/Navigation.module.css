@@ -1,9 +1,33 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #f6c177;
+}
+
 li {
-    float: left;
-  }
-  
-  a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-  }
+  margin: 0px; 
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #f69b1b;
+}
+
+.active {
+  background-color: #A1E6D8;
+}
+
+.floatRight {
+  margin-left: auto;
+}
