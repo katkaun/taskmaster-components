@@ -5,7 +5,7 @@ import Password from "./Password";
 import Mail from "./Mail";
 import Button from "../Button/Button";
 
-const Register = ({className, buttonClassName}) => {
+const Register = ({className}) => {
   return (
     <div className={` ${styles.container} ${className}`}>
       <h2 className={styles.title}>Register</h2>
@@ -13,7 +13,7 @@ const Register = ({className, buttonClassName}) => {
         <User />
         <Password />
         <Mail />
-        <Button title="Register" className={`${styles.registerButton} ${buttonClassName}`} />
+        <Button title="Register" className={styles.registerButton} />
       </div>
     </div>
   );
