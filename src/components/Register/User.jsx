@@ -1,18 +1,22 @@
 import React from "react";
-import styles from './Register.module.css';
+import styles from "./Register.module.css";
 
-const User = ({onUserChange}) => {
+const User = ({ onUserChange }) => {
+  const onUserComplete = (e) => {
+    onUserChange(e.target.value);
+  };
 
-    const onUserComplete = (e) => {
-        onUserChange(e.target.value);
-    }
-
-    return(
-        <div className={styles.formGroup}>
-        <label htmlFor="username">Username</label>
-        <input type="text" onBlur={onUserComplete} placeholder="Enter username" />
+  return (
+    <div className={styles.formGroup}>
+      <label htmlFor="username">Username</label>
+      <input
+        type="text"
+        id="username"
+        onChange={onUserComplete}
+        placeholder="Enter username"
+      />
     </div>
-    )
-}
+  );
+};
 
 export default User;
