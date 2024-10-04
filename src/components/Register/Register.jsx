@@ -5,9 +5,9 @@ import Password from "./Password";
 import Mail from "./Mail";
 import Button from "../Button/Button";
 
-const Register = () => {
+const Register = ({className}) => {
   return (
-    <div className={styles.container}>
+    <div className={` ${styles.container} ${className}`}>
       <h2 className={styles.title}>Register</h2>
       <div className={styles.formGroup}>
         <User />
