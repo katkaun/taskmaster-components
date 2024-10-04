@@ -13,7 +13,6 @@ const Register = ({className, buttonClassName}) => {
         <User />
         <Password />
         <Mail />
-        <Button title="Register" className={styles.registerButton} />
         <Button title="Register" className={`${styles.registerButton} ${buttonClassName}`} />
       </div>
     </div>
