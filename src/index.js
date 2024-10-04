@@ -5,5 +5,6 @@ import { Logo } from "./components/Logo";
 import { CalendarIcon } from "./components/CalendarIcon";
 import { UserIcon } from "./components/UserIcon";
 import { ReminderIcon } from "./components/ReminderIcon";
+import { Register } from "./components/Register";
 
-export { Button, Navbar, Logo, UserIcon, ReminderIcon, CalendarIcon };
+export { Button, Navbar, Logo, UserIcon, ReminderIcon, CalendarIcon, Register };
