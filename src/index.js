@@ -6,5 +6,6 @@ import { CalendarIcon } from "./components/CalendarIcon";
 import { UserIcon } from "./components/UserIcon";
 import { ReminderIcon } from "./components/ReminderIcon";
 import { Register } from "./components/Register";
+import { Footer } from './components/Footer';
 
-export { Button, Navbar, Logo, UserIcon, ReminderIcon, CalendarIcon, Register };
+export { Button, Navbar, Logo, UserIcon, ReminderIcon, CalendarIcon, Register, Footer };
