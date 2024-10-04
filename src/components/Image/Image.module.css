@@ -1,7 +1,9 @@
 .image {
-    border-radius: 10px; /* Example of styling */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Example of styling */
+    box-shadow: 0 0px 6px transparent;
     background-color: transparent;
+    width: 30px;
+    height: 30px;
 }
 
 .customStyle {
