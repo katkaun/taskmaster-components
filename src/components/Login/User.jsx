@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./Register.module.css";
+import styles from "./Login.module.css";
 
-const User = ({ onUserChange }) => {
-  const onUserComplete = (e) => {
-    onUserChange(e.target.value);
+const User = ({ setUsername }) => {
+  const handleChange = (e) => {
+    setUsername(e.target.value);
   };
 
   return (
@@ -13,8 +13,8 @@ const User = ({ onUserChange }) => {
         type="text"
         id="username"
         placeholder="Enter username"
-        onChange={onUserComplete}
-        
+        onChange={handleChange}
+        autoComplete="username"
       />
     </div>
   );
