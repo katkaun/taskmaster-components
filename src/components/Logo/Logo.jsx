@@ -2,7 +2,7 @@ import React from "react";
 
 export const Logo = () => {
   return (
-    <a href="">
+    <div>
       <svg
         width="176"
         height="62"
@@ -63,7 +63,7 @@ export const Logo = () => {
           fill="#090C19"
         />
       </svg>
-    </a>
+    </div>
   );
 };
 
