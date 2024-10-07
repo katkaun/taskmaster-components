@@ -1,11 +1,8 @@
-* {
-  margin: 0;
+.footer {
+  margin: auto;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-}
-
-.footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -17,13 +14,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 3.5rem;
-  padding: 25px;
+  gap: 2rem;
+  padding: 10px 30px;
 }
 
 .footerCol {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -47,15 +44,15 @@
 }
 
 .footerCol p {
-  margin: 20px 0;
+  margin: 10px 0;
   color: #ffffff;
   max-width: 300px;
 }
 
 .footerCol .icons {
   display: flex;
-  margin-top: 30px;
-  gap: 30px;
+  margin-top: 15px;
+  gap: 20px;
   cursor: pointer;
 }
 

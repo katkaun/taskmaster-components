@@ -1,18 +1,22 @@
 import React from "react";
-import styles from './Register.module.css';
+import styles from "./Register.module.css";
 
-const Mail = ({onMailChange}) => {
-
-const onMailComplete = () => {
+const Mail = ({ onMailChange }) => {
+  const onMailComplete = (e) => {
     onMailChange(e.target.value);
-}
+  };
 
-    return(
-        <div className={styles.formGroup}>
-            <label htmlFor="email">Email</label>
-            <input type="email" onBlur={onMailComplete} placeholder="Enter email" />
-        </div>
-    )
-}
+  return (
+    <div className={styles.formGroup}>
+      <label htmlFor="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        onChange={onMailComplete}
+        placeholder="Enter email"
+      />
+    </div>
+  );
+};
 
 export default Mail;
