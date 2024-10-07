@@ -19,7 +19,7 @@ jobs:
       -  name: check out
          uses: actions/checkout@v3
          with:
-           fetch-depth: 0 # Important for the next step to have the complete git history
+           fetch-depth: 0 
       -  name: Check for version change
          id: version_changed
          uses: EndBug/version-check@v2
@@ -33,5 +33,5 @@ jobs:
       - name: discord
         uses: sebastianpopp/discord-action@releases/v2
         with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          webhook: ${{ secrets.TASKMASTER_ALLMANT }}
           message: ${{ github.actor }} has successfully pushed to main
