@@ -8,6 +8,7 @@
   bottom: 0;
   width: 100%;
   background: #f6c177;
+  z-index: 1000;
 }
 
 .footerRow {
@@ -66,7 +67,7 @@
 
 @media (max-width: 768px) {
   .footer {
-    position: relative;
+    position: fixed;
     width: 100%;
   }
 
@@ -78,4 +79,8 @@
   .footerCol {
     text-align: center;
   }
+}
+
+body {
+  padding-bottom: 100px;
 }
