@@ -1,12 +1,37 @@
-name: My First Action
-
+name: deploy-components-to-stage
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+    paths: 
+      - 'package.json'
     
 jobs:
   react_on_push:
     runs-on: ubuntu-latest
     steps:
-    - name: Print Message
-      run: echo 'New push'
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18'
+          registry-url: 'https://registry.npmjs.org/'
+
+      -  name: check out
+         uses: actions/checkout@v3
+         with:
+           fetch-depth: 0 # Important for the next step to have the complete git history
+      -  name: Check for version change
+         id: version_changed
+         uses: EndBug/version-check@v2
+         with:
+           token: ${{ secrets.GITHUB_TOKEN }}
+           diff-search: true # Search for changes in the last commit
+
+      - name: hello-world
+        run: echo "Hello World"
+        
+      - name: discord
+        uses: sebastianpopp/discord-action@releases/v2
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          message: ${{ github.actor }} has successfully pushed to main
