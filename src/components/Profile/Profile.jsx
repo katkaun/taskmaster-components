@@ -3,7 +3,7 @@ import styles from "./Profile.module.css";
 import UserIcon from "../UserIcon/UserIcon"; 
 import Button from "../Button/Button"; 
 
-const Profile = () => {
+const Profile = ({ onEditClick }) => {
   return (
     <div className={styles.profileContainer}>
       <div className={styles.profileBody}>
@@ -20,7 +20,8 @@ const Profile = () => {
         </div>
 
         <div className={styles.buttonWrapper}>
-          <Button title="Redigera" className={styles.editButton} />
+          <Button title="Redigera" className={styles.editButton}
+          onClick={onEditClick} />
         </div>
       </div>
     </div>
