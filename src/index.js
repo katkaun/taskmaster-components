@@ -9,6 +9,7 @@ import { Footer } from "./components/Footer";
 import { Profile } from "./components/Profile";
 import { ProfileSettings } from "./components/ProfileSettings";
 import { Login } from "./components/Login";
+import { Calendar } from "./components/Calendar";
 
 export {
   Button,
@@ -22,4 +23,5 @@ export {
   Profile,
   ProfileSettings,
   Login,
+  Calendar,
 };
