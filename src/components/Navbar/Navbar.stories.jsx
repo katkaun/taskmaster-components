@@ -18,3 +18,7 @@ export const WithoutLogo = () => (
 );
 
 export const WithoutSubComponents = () => <Navbar />;
+
+export const WithStyling = {
+  
+};
